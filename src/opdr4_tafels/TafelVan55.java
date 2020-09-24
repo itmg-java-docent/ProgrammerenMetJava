@@ -1,6 +1,8 @@
-public class TafelVan93 {
+package opdr4_tafels;
+
+public class TafelVan55 {
     public static void main(String[] args) {
-        var getal = 93;
+        var getal = 55;
         System.out.println("1 x "+getal+" = "+getal*1);
         System.out.println("2 x "+getal+" = "+getal*2);
         System.out.println("3 x "+getal+" = "+getal*3);
