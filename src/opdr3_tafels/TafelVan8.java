@@ -1,4 +1,4 @@
-package opdr4_tafels;
+package opdr3_tafels;
 
 public class TafelVan8 {
     public static void main(String[] args) {
