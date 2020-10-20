@@ -8,7 +8,7 @@ public class Methodes {
         var s = new Scanner(System.in);
         System.out.println("Voer een bedrag in:");
         var beginBedrag = s.nextFloat();
-        System.out.println("Voer een maandrente in:");
+        System.out.println("Voer een maandrente in (0-100):");
         var maandRente = s.nextFloat();
         System.out.println("Uw eindbedrag bedraagt na 10 jaar:");
         maandRente /= 100;
@@ -18,8 +18,9 @@ public class Methodes {
     }
 
     static float berekenEindBedrag(float beginBedrag, float maandRente) {
-        for (var i = 1; i < 12 * 10; i++) {
+        for (var i = 1; i <= 12 * 10; i++) {
             beginBedrag += beginBedrag * maandRente;
+//            System.out.printf("maand %d: %f%n",i,beginBedrag);
         }
         return beginBedrag;
     }
